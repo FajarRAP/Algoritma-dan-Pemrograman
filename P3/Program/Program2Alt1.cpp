@@ -10,12 +10,13 @@ int main(){
     cout<<"Nilai z : ";
     cin>>z;
 
+    cout<<"Bilangan terbesar adalah ";
     if(x>y && x>z){
-        cout<<"Bilangan terbesar adalah "<<x<<endl;
+        cout<<x<<endl;
     }else if(y>x && y>z){
-        cout<<"Bilangan terbesar adalah "<<y<<endl;
+        cout<<y<<endl;
     }else{
-        cout<<"Bilangan terbesar adalah "<<z<<endl;
+        cout<<z<<endl;
     }
     
     return 0;
