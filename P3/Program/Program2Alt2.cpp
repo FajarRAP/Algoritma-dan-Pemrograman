@@ -10,6 +10,7 @@ int main(){
     cout<<"Nilai z : ";
     cin>>z;
 
+    cout<<"Bilangan terbesar adalah ";
     maks=x;
     if(y>maks && y>z){
         maks=y;
