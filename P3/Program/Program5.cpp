@@ -6,22 +6,31 @@ int main(){
     string hari;
     cout<<"Masukkan angka : ";
     cin>>angkahari;
-    if(angkahari==1){
-        hari="Senin";
-    }else if(angkahari==2){
-        hari="Selasa";
-    }else if(angkahari==3){
-        hari="Rabu";
-    }else if(angkahari==4){
-        hari="Kamis";
-    }else if(angkahari==5){
-        hari="Jumat";
-    }else if(angkahari==6){
-        hari="Sabtu";
-    }else if(angkahari==7){
-        hari="Minggu";
-    }else{
-        hari="Inputan tidak valid";
+
+    switch(angkahari){
+        case 1:
+            hari="Senin";
+        break;
+        case 2:
+            hari="Selasa";
+        break;
+        case 3:
+            hari="Rabu";
+        break;
+        case 4:
+            hari="Kamis";
+        break;
+        case 5:
+            hari="Jumat";
+        break;
+        case 6:
+            hari="Sabtu";
+        break;
+        case 7:
+            hari="Minggu";
+        break;
+        default:
+            hari="Inputan hari tidak valid";
     }
     cout<<"Hari "<<hari<<endl;
     return 0;
