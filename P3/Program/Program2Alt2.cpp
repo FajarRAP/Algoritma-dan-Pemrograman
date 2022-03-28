@@ -9,9 +9,9 @@ int main(){
     cin>>y;
     cout<<"Nilai z : ";
     cin>>z;
-
-    cout<<"Bilangan terbesar adalah ";
+  
     maks=x;
+    cout<<"Bilangan terbesar adalah ";
     if(y>maks && y>z){
         maks=y;
         cout<<maks<<endl;
