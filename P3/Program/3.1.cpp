@@ -9,6 +9,8 @@ int main(){
     cin>>b;
     if(a>b){
         cout<<"Bilangan terbesar adalah A = "<<a<<endl;
+    }else if(a==b){
+        cout<<"Kedua bilangan sama besaar"<<endl;
     }else{
         cout<<"Bilangan terbesar adalah B = "<<b<<endl;
     }
