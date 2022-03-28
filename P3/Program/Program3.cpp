@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-    float a, b, c, disk, x1, x2, x1s, x2s;
+    float a, b, c, disk, x1, x2;
     
     cout<<"Nilai A : ";
     cin>>a;
