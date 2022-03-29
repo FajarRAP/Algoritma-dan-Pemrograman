@@ -29,8 +29,8 @@ class angka{
 };
 
 int main(){
-    angka titit;
-    titit.inputangka();
-    titit.tampilangka();
+    angka banding;
+    banding.inputangka();
+    banding.tampilangka();
     return 0;
 }
