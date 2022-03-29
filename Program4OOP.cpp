@@ -29,6 +29,8 @@ class nilai{
 };
 
 int main(){
-    
+    nilai konversi;
+    konversi.inputangka();
+    konversi.tampilhuruf();
     return 0;
 }
