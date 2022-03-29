@@ -4,6 +4,7 @@ using namespace std;
 class cek{
     public:
         char karakter;
+        string kata;
 
         int inputkarakter(){
             cout<<"Silakan input 1 karakter : ";
@@ -13,16 +14,21 @@ class cek{
 
         void ngecek(){
             if(karakter>'1' && karakter<'9'){
-                cout<<"Angka"<<endl;
+                kata="Bilangan (digit)";
             }else if(karakter>'a' && karakter<'z'){
-                cout<<"Huruf Kecil"<<endl;
+                kata="Huruf Kecil";
             }else if(karakter>'A' && karakter<'Z'){
-                cout<<"Huruf Kapital"<<endl;
+                kata="Huruf Kapital";
+            }else{
+                kata="Error, anda memasukkan lebih dari 1 karakter";
             }
+            cout<<kata<<endl;
         }
 };
 
 int main(){
-    
+    cek karakter;
+    karakter.inputkarakter();
+    karakter.ngecek();
     return 0;
 }
