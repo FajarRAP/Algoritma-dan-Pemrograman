@@ -36,7 +36,7 @@ class hari{
                     namahari="Minggu";
                     break;
                 default:
-                    cout<<"Inputan tidak valid";
+                    cout<<"Inputan tidak valid"<<endl;
             }
             cout<<"Hari "<<namahari<<endl;
         }
