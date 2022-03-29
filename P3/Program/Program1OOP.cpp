@@ -17,10 +17,14 @@ class angka{
             angka::maks=a;
             if(a>b){
                 maks=a;
-            }else{
-                maks=b;
+                cout<<"Bilangan terbesar "<<maks<<endl;
+            }else if(a==b){
+                cout<<"Kedua bilangan sama besar"<<endl;
             }
-            cout<<"Bilangan terbesar "<<maks<<endl;
+            else{
+                maks=b;
+                cout<<"Bilangan terbesar "<<maks<<endl;
+            }
         }
 };
 
