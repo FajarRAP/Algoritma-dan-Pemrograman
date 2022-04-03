@@ -13,7 +13,7 @@ class cek{
         }
 
         void ngecek(){
-            if(karakter>'1' && karakter<'9'){
+            if(karakter>'-9' && karakter<'9'){
                 kata="Bilangan (digit)";
             }else if(karakter>'a' && karakter<'z'){
                 kata="Huruf Kecil";
