@@ -4,7 +4,7 @@ using namespace std;
 class sentinel{
     public:
         int n=1;
-        float jumlah=0, nilai, mean;
+        float jumlah=0, nilai;
 
         int hitung_jumlah(){
             cout<<"Nilai ke-1 (isi 0 jika sudah selesai) : ";
