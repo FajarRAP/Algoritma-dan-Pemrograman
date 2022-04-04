@@ -5,7 +5,7 @@ class kuadrat{
     public:
         int pangkat=1;
         float negatif=1, x, y;
-        string titit;
+        string kata;
 
         int input(){
             cout<<"Masukkan angka   : ";
@@ -22,8 +22,8 @@ class kuadrat{
                     pangkat*=x;
                 }
                 negatif/=pangkat;
-                titit="1/";
-                cout<<x<<"^-"<<y<<"\t= "<<titit<<pangkat<<endl;
+                kata="1/";
+                cout<<x<<"^-"<<y<<"\t= "<<kata<<pangkat<<endl;
                 cout<<"\t= "<<negatif<<endl;
             }else{
                 for(int a=1; a<=y; a++){
