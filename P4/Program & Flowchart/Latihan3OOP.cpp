@@ -13,15 +13,15 @@ class maksmintot{
         }
 
         void hitung(){
+            input();
             min=angka;
-            maks=angka;
             while(angka>0){
                 cout<<"Masukkan angka : ";
                 cin>>angka;
                 total+=angka;
                 if(angka<min && angka!=0){
                     min=angka;
-                }else if(angka>maks && angka!=0){
+                }else if(angka>min && angka!=0){
                     maks=angka;
                 }
             }
@@ -38,7 +38,6 @@ class maksmintot{
 int main(){
     system("cls");
     maksmintot angka;
-    angka.input();
     angka.hitung();
     return 0;
 }
