@@ -1,12 +1,11 @@
 #include<iostream>
 #include<windows.h>
-#include<iomanip>
 using namespace std;
 
 class bensin{
     public:
-        int pilih;
-        float uang, liter, harga, harga2, harga3;
+        int pilih, based;
+        float uang=0, liter=0, harga=0, harga2=0;
 
         int jenisbbm(){
             cout<<"1. Pertamax\n2. Pertalite"<<endl;
@@ -15,44 +14,63 @@ class bensin{
             return pilih;
         }
 
-        int bayar(){
-            cout<<"Berapa ribu : ";
-            cin>>uang;
-            return uang;
+        int basedon(){
+            cout<<endl;
+            cout<<"Based on "<<endl;
+            cout<<"1. Uang\n2. Liter"<<endl;
+            cout<<"Pilihanmu : ";
+            cin>>based;
+            return based;
         }
 
-        void kasuspilih(){
+        void cetak(){
+            jenisbbm();
             switch(pilih){
                 case 1:
-                    harga=12500;
                     harga2=1250;
-                    liter=uang/harga;
-                    harga3=harga*liter;
+                    basedon();
+                    kasusbased();
                     break;
                 case 2:
-                    harga=7650;
-                    harga2=765;
-                    liter=uang/harga;
-                    harga3=harga*liter;
+                    harga2=900;
+                    basedon();
+                    kasusbased();
                     break;
                 default:
                     cout<<"Pilihan tidak tersedia"<<endl;
             }
         }
-        void cetak(){
-            jenisbbm();
-            bayar();
-            kasuspilih();
-            for(float a=0.0; a<=true; a+=0.1){
-                system("cls");
-                
-                cout<<"Liter = "<<a<<endl;
-                cout<<"Harga = "<<harga2*(a*10)<<endl;
-                harga=harga2;
-                if(harga>=harga3){
+        
+        void kasusbased(){
+            cout<<endl;
+            switch(based){
+                case 1:
+                    cout<<"Masukkan uang : ";
+                    cin>>uang;
+                    for(int a=harga; a<=uang; a+=harga2){
+                        system("cls");
+                        cout<<liter;
+                        liter+=0.1;
+                        Sleep(800);
+                    }
+                    liter-=0.1;
+                    system("cls");
+                    cout<<"Jumlah liter = "<<liter<<" liter"<<endl;
                     break;
-                }
-                Sleep(800);
+                case 2:
+                    cout<<"Masukkan liter : ";
+                    cin>>liter;
+                    for(float a=0.1; a<=liter; a+=0.1){
+                        system("cls");
+                        harga+=harga2;
+                        cout<<harga;
+                        Sleep(800);
+                    }
+                    harga+=harga2;
+                    system("cls");
+                    cout<<"Total bayar = Rp. "<<harga<<endl;
+                    break;
+                
             }
         }
 };
