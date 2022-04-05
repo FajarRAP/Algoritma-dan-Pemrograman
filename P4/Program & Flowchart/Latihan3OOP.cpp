@@ -24,10 +24,13 @@ class maksmintot{
                 }else if(angka>maks && angka!=0){
                     maks=angka;
                 }
-                
             }
-            cout<<"Maks  = "<<maks<<endl;
-            cout<<"Min   = "<<min<<endl;
+            if(maks==min){
+                cout<<"Semua bilangan sama besar"<<endl;
+            }else{
+                cout<<"Maks  = "<<maks<<endl;
+                cout<<"Min   = "<<min<<endl;
+            }      
             cout<<"Total = "<<total<<endl;
         }
 };
