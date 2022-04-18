@@ -22,6 +22,7 @@ int main(){
     cin>>x;
     cout<<"y : ";
     cin>>y;
-    cout<<"Bilangan terbesar = ";banding(n, x, y);
+    cout<<"Bilangan terbesar = ";
+    banding(n, x, y);
     return 0;
 }
