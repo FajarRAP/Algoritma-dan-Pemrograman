@@ -2,10 +2,14 @@
 #include<math.h>
 using namespace std;
 
+int total=0;
+
 int kali(int n, int akhir, int angka){
     if(n==akhir){
-        return n*angka;
+        total+=angka;
+        return total;
     }else{
+        total+=angka;
         return kali(n+1, akhir, angka);
     }
 }
@@ -18,6 +22,6 @@ int main(){
     cin>>angka;
     cout<<"Pengali : ";
     cin>>pengali;
-    cout<<"Hasil = "<<kali(n, angka, pengali);
+    cout<<"Hasil = "<<kali(n, pengali, angka);
     return 0;
 }
