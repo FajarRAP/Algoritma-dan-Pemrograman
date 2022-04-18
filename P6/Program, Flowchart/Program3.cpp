@@ -14,6 +14,14 @@ int logaritma(int n, int x, int y){
 }
 
 int main(){
-    logaritma(2, 2, 4);
+    system("cls");
+    int n=5;
+    int x, y;
+    cout<<"x : ";
+    cin>>x;
+    cout<<"y : ";
+    cin>>y;
+    cout<<"Hasil = ";
+    logaritma(n, x, y);
     return 0;
 }

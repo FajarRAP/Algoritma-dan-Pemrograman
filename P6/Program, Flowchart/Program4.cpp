@@ -11,6 +11,13 @@ int kali(int n, int akhir, int angka){
 }
 
 int main(){
-    cout<<kali(1, 3, 8);
+    system("cls");
+    int n=1;
+    int angka, pengali;
+    cout<<"Angka   : ";
+    cin>>angka;
+    cout<<"Pengali : ";
+    cin>>pengali;
+    cout<<"Hasil = "<<kali(n, angka, pengali);
     return 0;
 }

@@ -15,6 +15,13 @@ int banding(int n, int a, int b){
 }
 
 int main(){
-    banding(2, 8, 4);
+    system("cls");
+    int n=5;
+    int x, y;
+    cout<<"x : ";
+    cin>>x;
+    cout<<"y : ";
+    cin>>y;
+    cout<<"Bilangan terbesar = ";banding(n, x, y);
     return 0;
 }
