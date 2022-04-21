@@ -32,6 +32,6 @@ int main(){
     cout<<"z : ";
     cin>>z;
     cout<<"Bilangan terbesar = ";
-    banding(5, x, y, z);
+    banding(n, x, y, z);
     return 0;
 }
