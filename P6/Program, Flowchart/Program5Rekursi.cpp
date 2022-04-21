@@ -1,19 +1,30 @@
 #include<iostream>
 using namespace std;
 
-int faktorial(int n){
-    if(n==1){
-        return n;
-    }else{
-        return n*faktorial(n-1);
-    }
-}
+class faktorial{
+    public:
+        void input(){
+            cout<<"angka : ";
+            cin>>angka;
+            cout<<angka<<"! = "<<faktoriall(angka);
+        }
+
+        int faktoriall(int n){
+            if(n==1){
+                return n;
+            }else{
+                return n*faktoriall(n-1);
+            }
+        }
+
+    private:
+        int angka;
+};
+
 
 int main(){
     system("cls");
-    int angka;
-    cout<<"angka : ";
-    cin>>angka;
-    cout<<angka<<"! = "<<faktorial(angka);
+    faktorial angka;
+    angka.input();
     return 0;
 }
